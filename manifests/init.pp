@@ -61,7 +61,7 @@ class svckill (
 ){
   include '::svckill::ignore::collector'
 
-  svckill { 'svckill':
+	svckill { 'svckill':
     ignore      => $ignore,
     ignorefiles => flatten([
       $ignore_files,
